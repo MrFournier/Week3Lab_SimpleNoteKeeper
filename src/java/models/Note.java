@@ -69,7 +69,7 @@ public class Note implements Serializable {
             // to write to a file
             PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(path, false)));
             
-            pw.write(title);
+            pw.write(title + "\n");
             pw.write(content);
             
             pw.close();
